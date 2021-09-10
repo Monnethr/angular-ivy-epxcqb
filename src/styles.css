@@ -2,7 +2,6 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-
 /* LABELA*/
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0{
  /* Rezerviram marginu unutar parent elementa kako bi pomaknuta labela ostala unutar granica componente a u isto vrijeme izvan grafičke granice (ovo je implementirano kako bi se izbjeglo preklapanje apsolutnog pozicionirane labele s nekim drugim DOM elementom izvan komponente */
@@ -10,8 +9,27 @@
   }
 
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted{
-    /* Custom boja za labelu */
-   color:green;
+    /* Custom definicija labele (label-thin za input) */
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #054d3c ;
+    font-size: 0.875rem;
+	  line-height: 1.25rem;
+  	font-weight: 700;
+	  letter-spacing: 0.025em;
+  	opacity: 0.8;
+
+    font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
        
    }
 
@@ -19,6 +37,7 @@
     /* Pozicioniranje labele izvan grafičke granice */
      top:-1.65em;
      padding-top:1.65em;
+     left:-0.65em;
          
      }
 
