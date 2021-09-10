@@ -54,7 +54,7 @@ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-i
             
   }
 
-/*Nakon on focus eventa se u mat-form-field ugrađuje dodatna klasa mat-focused. Ovdje se dakle referencira mat-form-field on focus u svrhu promjene boje rubova pravokutnika (inicijalno boja teme)*/
+/*Nakon on focus eventa se u mat-form-field ugrađuje dodatna klasa mat-focused. Ovdje se dakle referencira mat-form-field on focus u svrhu promjene boje rubova pravokutnika (inicijalno boja teme). Direktno referenciranje on focus ne daje rezultat.*/
 mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label.mat-focused .mat-form-field-outline-thick{
     color:green;
      }
