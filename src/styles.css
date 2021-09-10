@@ -18,11 +18,12 @@
   /* Simulacija ubacivanja novog teksta u mat-label custom element korištenjem after pseudo elementa */ 
    mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted mat-label.ng-tns-c77-0.ng-star-inserted:after{
 
+    /* preuzeta postojeća definicija mat-labela i dodana modifikacija-potrebna minifikacija */ 
     visibility:visible;
     content:'FILTER BY DATE';
     transform: translateY(-1.59375em) scale(1.28);
     width: 133.3333333333%;
-    padding-left:3.3em;
+    padding-left:3.3em; /* rezervacija prostora jer je scale u transform veći od 1 */ 
    
     display: block;
     top: 1.84375em;
