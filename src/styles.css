@@ -2,33 +2,40 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0{
- 
-    border-radius: 1rem; 
-  }
 
+/* LABELA*/
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0{
  /* Rezerviram marginu unutar parent elementa kako bi pomaknuta labela ostala unutar granica componente a u isto vrijeme izvan grafičke granice (ovo je implementirano kako bi se izbjeglo preklapanje apsolutnog pozicionirane labele s nekim drugim DOM elementom izvan komponente */
     margin:0.6em 0;
   }
 
+  mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted{
+    /* Custom boja za labelu */
+   color:green;
+       
+   }
+
+  mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0{
+    /* Pozicioniranje labele izvan grafičke granice */
+     top:-1.65em;
+     padding-top:1.65em;
+         
+     }
+
+/* INPUT RECTANGLE*/
+/* Sva djeca (tri elementa koji dijele parent okvir) moraju imati sivu pozadinu.
+  S obzirom da ne želimo prekid linije koji je svojstven outline apperance za mat-form-field vrši se dodatna modifikacija (modifikacija gornje granice drugog elementa). Modifkacija border radijusa prvog i zadnjeg elementa */
+mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.ng-tns-c77-0.ng-star-inserted > *{
+  
+  background-color: gray;
+      
+  }
+
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.ng-tns-c77-0.ng-star-inserted .mat-form-field-outline-start{
-    /* Sva djeca (tri elementa koji dijele parent okvir) u oba moda (focused ili ne) moraju imati sivu pozadinu.
-    S obzirom da ne želimo prekid linije koji je svojstven outline apperance za mat-form-field vrši se dodatna modifikacija */
+    
     background-color: gray;
         
     }
  
-    mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted{
-       /* Custom boja za labelu */
-      color:green;
-          
-      }
-
-      mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0{
-       /* Pozicioniranje labele izvan grafičke granice */
-        top:-1.65em;
-        padding-top:1.65em;
-            
-        }
+    
 
