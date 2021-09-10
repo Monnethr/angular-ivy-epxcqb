@@ -5,31 +5,42 @@
 /* LABELA*/
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0{
  /* Rezerviram marginu unutar parent elementa kako bi pomaknuta labela ostala unutar granica componente a u isto vrijeme izvan grafičke granice (ovo je implementirano kako bi se izbjeglo preklapanje apsolutnog pozicionirane labele s nekim drugim DOM elementom izvan komponente */
-    margin:0.6em 0;
+    margin:1.5em 0;
   }
 
-  mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted{
-    /* Custom definicija labele (label-thin za input) */
-    line-height: 1rem;
-    font-weight: 700;
+   /* skrivanje generiranog mat-label custom elementa koji se nalazi unutar label u svrhu promjene postojećeg teksta mat-label.a uz pomoć after pseudo elementa */ 
+  mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted mat-label.ng-tns-c77-0.ng-star-inserted{
+
+   visibility:hidden;
+      
+   }
+
+  /* Simulacija ubacivanja novog teksta u mat-label custom element korištenjem after pseudo elementa */ 
+   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted mat-label.ng-tns-c77-0.ng-star-inserted:after{
+
+    visibility:visible;
+    content:'FILTER BY DATE';
+    transform: translateY(-1.59375em) scale(1.28);
+    width: 133.3333333333%;
+    padding-left:3.3em;
+   
+    display: block;
+    top: 1.84375em;
+
+    position: absolute;
+    text-align: left;
+
     text-transform: uppercase;
     color: #054d3c ;
-    font-size: 0.875rem;
-	  line-height: 1.25rem;
+    font-size: 0.75rem;
+	  line-height: 0.5rem;
   	font-weight: 700;
 	  letter-spacing: 0.025em;
-  	opacity: 0.8;
+  	opacity: 0.92;
 
-    font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+    /*Potrebno je još kopanja po tailwind css file-u kako bi font ispao indentičan mock-up-u (pojedini elementi fonta su raštrkani i nasljeđuju se)*/
        
    }
 
@@ -103,3 +114,4 @@ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-i
        
    }
 
+   
