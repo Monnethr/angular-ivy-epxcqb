@@ -28,7 +28,7 @@
 mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.ng-tns-c77-0.ng-star-inserted > *{
   
   background-color: gray;
-      
+       
   }
 
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.ng-tns-c77-0.ng-star-inserted .mat-form-field-outline-start{
@@ -46,4 +46,11 @@ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-i
     border-top-color: currentColor;     
           }
     
+
+/* STACKBLITZ BUG (prenosi se definicija transition-a on opacity change, postavljanje tranzicije na nula sekundi*/
+ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.mat-form-field-outline-thick.ng-tns-c77-0.ng-star-inserted{
+  
+  transition:opacity 0s ease-out;
+            
+  }
 
