@@ -5,7 +5,7 @@
 /* LABELA*/
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0{
  /* Rezerviram marginu unutar parent elementa kako bi pomaknuta labela ostala unutar granica componente a u isto vrijeme izvan grafičke granice (ovo je implementirano kako bi se izbjeglo preklapanje apsolutnog pozicionirane labele s nekim drugim DOM elementom izvan komponente */
-    margin:1.5em 0;
+    margin:1.2em 0;
   }
 
    /* skrivanje generiranog mat-label custom elementa koji se nalazi unutar label u svrhu promjene postojećeg teksta mat-label.a uz pomoć after pseudo elementa */ 
@@ -21,9 +21,9 @@
     /* preuzeta postojeća definicija mat-labela i dodana modifikacija-potrebna minifikacija */ 
     visibility:visible;
     content:'FILTER BY DATE';
-    transform: translateY(-1.59375em) scale(1.28);
+    transform: translateY(-1.59375em) scale(1.29);
     width: 133.3333333333%;
-    padding-left:3.3em; /* rezervacija prostora jer je scale u transform veći od 1 */ 
+    padding-left:3.31em; /* rezervacija prostora jer je scale u transform veći od 1 */ 
    
     display: block;
     top: 1.84375em;
@@ -37,9 +37,9 @@
 	  line-height: 0.5rem;
   	font-weight: 700;
 	  letter-spacing: 0.025em;
-  	opacity: 0.92;
+  	opacity: 0.82;
 
-    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: Fira Sans Condensed;
 
     /*Potrebno je još kopanja po tailwind css file-u kako bi font ispao indentičan mock-up-u (pojedini elementi fonta su raštrkani i nasljeđuju se)*/
        
