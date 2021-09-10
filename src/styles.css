@@ -71,8 +71,7 @@ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-i
 /*Modifikacija boje input pokazivača (vertikalna linija koja blinka na mjestu rezerviranom za sljedeće slovo inputa)(inicijalno boja teme)*/
 
 mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-input-element.mat-form-field-autofill-control.mat-datepicker-input.ng-tns-c77-0.cdk-text-field-autofill-monitored{
- caret-color:green;
-   
+  caret-color:black;
        
    }
 
