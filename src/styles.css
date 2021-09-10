@@ -47,10 +47,15 @@ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-i
           }
     
 
-/* STACKBLITZ BUG (prenosi se definicija transition-a on opacity change, postavljanje tranzicije na nula sekundi*/
+/* SKRIVENE TRANZICIJE (postavljanje tranzicije na nula sekundi*/
  mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.mat-form-field-outline-thick.ng-tns-c77-0.ng-star-inserted{
   
   transition:opacity 0s ease-out;
             
   }
+
+/*Nakon on focus eventa se u mat-form-field ugrađuje dodatna klasa mat-focused. Ovdje se dakle referencira mat-form-field on focus u svrhu promjene boje rubova pravokutnika (inicijalno boja teme)*/
+mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label.mat-focused .mat-form-field-outline-thick{
+    color:green;
+     }
 
