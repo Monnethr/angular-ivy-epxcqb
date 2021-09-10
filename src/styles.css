@@ -39,9 +39,9 @@
 	  letter-spacing: 0.025em;
   	opacity: 0.82;
 
-    font-family: Fira Sans Condensed;
+    font-family: 'Fira Sans Condensed';
 
-    /*Potrebno je još kopanja po tailwind css file-u kako bi font ispao indentičan mock-up-u (pojedini elementi fonta su raštrkani i nasljeđuju se)*/
+    /*Potrebno je još analize kako bi font ispao indentičan mock-up-u (pojedini elementi fonta su raštrkani i nasljeđuju se unutar angulara i mock-upa-a). Potrebno je pronaći definiciju svih font-* atributa unutar mock-up css file-a unutar stabla labele*/
        
    }
 
@@ -105,7 +105,7 @@ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-i
 
 /*Nakon on focus eventa se u mat-form-field ugrađuje dodatna klasa mat-focused. Ovdje se dakle referencira mat-form-field on focus u svrhu promjene boje rubova pravokutnika (inicijalno boja teme). Direktno referenciranje on focus ne daje rezultat.*/
 mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label.mat-focused .mat-form-field-outline-thick{
-    color:green;
+    color: #10b785 ;
      }
 
 /*Modifikacija boje input pokazivača (vertikalna linija koja blinka na mjestu rezerviranom za sljedeće slovo inputa)(inicijalno boja teme)*/
