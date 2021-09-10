@@ -33,9 +33,17 @@ mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-i
 
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.ng-tns-c77-0.ng-star-inserted .mat-form-field-outline-start{
     
-    background-color: gray;
-        
+    border-radius: 0.25em 0 0 0.25em;     
     }
- 
+
+  mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.ng-tns-c77-0.ng-star-inserted .mat-form-field-outline-end{
+    
+    border-radius: 0 0.25em 0.25em 0;     
+      }
+
+  mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-outline.ng-tns-c77-0.ng-star-inserted .mat-form-field-outline-gap{
+    
+    border-top-color: currentColor;     
+          }
     
 
