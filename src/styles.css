@@ -8,7 +8,7 @@
     margin:1.2em 0;
   }
 
-   /* skrivanje generiranog mat-label custom elementa koji se nalazi unutar label u svrhu promjene postojećeg teksta mat-label.a uz pomoć after pseudo elementa */ 
+   /* skrivanje generiranog mat-label custom elementa koji se nalazi unutar label u svrhu promjene postojećeg teksta mat-label-a uz pomoć after pseudo elementa */ 
   mat-form-field.mat-form-field.ng-tns-c77-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float.mat-form-field-has-label .mat-form-field-wrapper.ng-tns-c77-0 .mat-form-field-flex.ng-tns-c77-0 .mat-form-field-infix.ng-tns-c77-0 .mat-form-field-label-wrapper.ng-tns-c77-0 .mat-form-field-label.ng-tns-c77-0.ng-star-inserted mat-label.ng-tns-c77-0.ng-star-inserted{
 
    visibility:hidden;
